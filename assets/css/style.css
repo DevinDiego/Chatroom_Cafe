@@ -1,0 +1,794 @@
+/****************** IMPORTED FONTS **************************/
+@font-face {
+	font-family: 'Bellota-Bold';
+	src: url('../fonts/Bellota-Bold.otf');
+}
+@font-face {
+	font-family: 'Bellota-BoldItalic';
+	src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+@font-face {
+	font-family: 'Bellota-Italic';
+	src: url('../fonts/Bellota-Italic.otf');
+}
+@font-face {
+	font-family: 'Bellota-Light';
+	src: url('../fonts/Bellota-Light.otf');
+}
+@font-face {
+	font-family: 'Bellota-LightItalic';
+	src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face {
+	font-family: 'Bellota-Regular';
+	src: url('../fonts/Bellota-Regular.otf');
+}
+@font-face {
+	font-family: 'Lobster';
+	src: url('../fonts/Lobster.otf');
+}
+/*********** END IMPORTED FONTS ***********************************/
+
+/* navigation bar (header.php) */
+body {
+	line-height: 17px;
+	background-color: #FFFFF0;
+}
+
+a {
+	color: #0931F9;
+	text-decoration: none;
+}
+
+.top_bar { 
+	width: 100%;
+	min-width: 0px;
+	height: 50px;
+	background-color: #F8C471;
+	border-top: 0.25em solid #383838;
+	border-bottom: 0.25em solid #383838;
+	margin: 0px 0 10px 0;
+	display: inline-flex;
+	position: fixed;
+	z-index: 10;
+}
+
+/* Chatroom Caffe in navigation bar (header.php) */
+.logo a { 
+	font-family: 'Lobster', sans-serif;
+	margin-left: 10px;
+	font-size: 35px;
+	position: relative;
+	top: 9px;
+	color: #383838;
+	text-shadow: #FFFFF0 2px 2px 2px;
+}
+
+nav { /* icons in navigation bar (header.php) */
+	float: right;
+	right: 1px;
+	position: absolute;
+	margin: 10px;
+	font-family: 'Bellota-Bold', sans-serif;
+}
+
+nav a { /* icon links navigation bar (header.php) */
+	position: relative;
+	color: #000;
+	text-shadow: #FFFFF0 1px 1px 1px;	
+	font-size: 25px;
+	padding: 3px;
+}
+
+.site_lock {
+	float: right;
+
+}
+
+.wrapper { /*<div three> (position profile_pic) (header.php)*/
+	margin: 0 auto;
+	top: 50px;
+	position: relative;
+	padding: 0 10px;
+	width: 75%;
+	min-width: 950px;	
+}
+
+.column { /*<div one> column behind profile_pic (index.php)*/
+	background-color: #FFFFF0;
+	padding: 10px;
+	border: 1px solid #383838;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #383838;
+	z-index: -1; /*appear behind bar*/
+}
+
+.user_details { /*<div one> re-size the above column(index.php)*/
+	width: 270px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+/*position the above user_details to the right*/
+.user_details_left_right { /*<div two> (index.php)*/
+	width: 125px;
+	display: inline-block;
+	position: absolute;
+	font-family: 'Bellota-Bold', sans-serif;
+	word-wrap: break-word;
+}
+
+.user_details img { /*<div one> img (index.php)*/
+	height: 125px;
+	border: 5px solid #F8C471;;	
+	border-radius: 7px;
+	margin-right: 5px;
+}
+
+/*main column of posting area*/
+.main_column { /*<div four> (index.php)*/
+	float: right;
+	width: 70%;
+	z-index: -1; /*appear behind bar*/
+	min-height: 170px;
+}
+
+/*posting area <form> (index.php)*/
+.post_form {
+	width: 100%;
+}
+
+/*posting area <form> textarea (index.php)*/
+.post_form textarea {
+	width: 80%;
+	height: 60px;
+	border-radius: 5px;
+	margin-right: 5px;
+	border: 1px solid #383838;
+	font-size: 16px;
+	outline-color: #F8C471;
+	padding: 5px;
+}
+
+/*posting area <form> button (index.php)*/
+.post_form input[type="submit"] {
+	width: 10%;
+	height: 61px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: #F8C471;
+	font-family: 'Bellota-Bold', sans-serif;
+	color: #000;	
+	font-size: 90%;
+	position: absolute;
+	margin: 0;
+}
+
+/*activity on button when active (pressed)*/
+.post_form input[type="submit"]:active {
+	padding: 5px 5px 5px 5px;
+	background-color: #FFF;
+}
+
+.status_post { /* <div class='status_post'> (Post.php) in posting "str" */
+	width: 96%;	
+	font-size: 15px;
+	padding: 0px 5px;
+	min-height: 75px;
+	background-color: #FFFFF0;
+	cursor: pointer;
+}
+
+.post_profile_pic { /* <div class='post_profile_pic'> (Post.php) in posting "str" */
+	float: left;
+	margin-right: 7px;	
+}
+
+.post_profile_pic img { /* <div class='post_profile_pic'> (Post.php) in posting "str" */
+	border-radius: 5px;
+	border: 1px solid #383838;
+}
+
+#comment_iframe { /* <iframe id="comment_iframe> (Post.php) in posting "str" */
+	max-height: 250px;	
+	width: 100%;
+	margin-top: 5px;	
+}
+
+.comment_section { /* <div class="comment_section"> (comment_frame.php) */
+	padding: 0 5px 5px 5px;
+	background-color: #FFF;	
+}
+
+/*comment section image*/
+.comment_section img { /* <div class="comment_section"> (comment_frame.php) */
+	margin: 1px 3px 1px 1px;
+	border: 1px solid #383838;
+	border-radius: 3px;
+	width: 4%;
+	position: relative;
+
+}
+
+/*comment textarea*/
+#comment_form textarea{ /*id="comment_form" (comment_frame.php)*/
+	width: 85%;
+	height: 35px;	
+	border-radius: 5px;
+	color: #000;
+	font-size: 14px;
+	margin: 3px 3px 3px 5px;
+}
+
+/*comment post button*/
+#comment_form input[type="submit"] { /*id="comment_form" (comment_frame.php)*/
+	border: 1px solid #000;
+	background-color: #F8C471;
+	color: #000;
+	border-radius: 5px;
+	width: 13%;
+	height: 42px;
+	margin-top: 3px;
+	position: absolute;
+	font-family: 'Bellota-Bold', sans-serif;	
+}
+
+/*whole iframe around comments and likes*/
+.newsfeedPostOptions { /*<div class='newsfeedPostOptions'> (Post.php) in posting "str"*/
+	padding: 0px;
+	text-decoration: none;
+	color: #0931F9;
+	border: none;
+	background-color: #FFFFF0;	
+}
+
+.newsfeedPostOptions iframe { /*<div class='newsfeedPostOptions'> (Post.php) in posting "str"*/
+	border: 0px;
+	height: 25px;
+	width: 120px;
+
+}
+
+.comment_like { /*<form> class="comment_like (like.php)*/
+	background-color: transparent;
+	border: none;
+	font-size: 14px;
+	color: #0931F9;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	margin: 0;
+}
+
+.like_value { /*<div class="like_value"> (like.php)*/
+	display: inline;
+	font-size: 14px;
+}
+
+/*profile column on left side of page*/
+.profile_left { /*<div class="profile_left"> (profile.php)*/
+	top: -10px;
+	width: 17%;
+	max-width: 240px;
+	min-width: 130px;
+	height: 100%;
+	float: left;
+	position: relative;
+	background-color: #F8C471;
+	border-right: 10px solid #383838;
+	color: #383838;	
+	margin-right: 20px;	
+	font-family: 'Bellota-Bold', sans-serif;
+	text-shadow: #383838 1px 0px 0px;
+}
+
+.profile_left img { /* <div class="profile_left"> (profile.php) */
+	min-width: 80px;
+	width: 55%;
+	margin: 20px;
+	border: 2px solid #383838;
+	border-radius: 100px;
+}
+
+/*profile section containing posts, likes, friends*/
+.profile_info { /* <div class="profile_info"> (profile.php) */
+	display: list-item;
+	background-color: #FFFFF0;
+	width: 100%;
+	padding: 10px 0px 10px 0;	
+	border-bottom: 3px solid #383838;
+}
+
+/*target the paragraph tags(Posts, Likes, Friends)*/
+.profile_info p { /*<div class="profile_info"> (profile.php)*/
+	margin: 0 0 0 20px;
+	word-wrap: break-word;
+}
+
+/*Remove friend button*/
+.danger { /*<input type="submit> (profile.php)*/
+	background-color: #E74C3C;
+}
+
+/*Respond to Request button*/
+.warning { /*<input type="submit> (profile.php)*/
+	background-color: #F3F315;
+}
+
+/*Request Sent button*/
+.default { /*<input type="submit> (profile.php)*/
+	background-color: #BDC3C7;
+}
+
+/*Add Friend button*/
+.success { /*<input type="submit> (profile.php)*/
+	background-color: #2ECC71;
+}
+
+.info {
+	background-color: #3498db
+}
+
+.deep_blue { /*Post Something button (profile.php)*/
+	background-color: #2E79D1
+}
+
+/* Button profile page left */
+.profile_left input[type="submit"] { /* <div class="profile_left"> (profile.php) */
+	width: 90%;
+	height: 30px;
+	border-radius: 5px;
+	margin: 7px 0 0 7px;
+	border: none;
+	color: #0326F8;
+	background-color: #FFFFF0;
+	border: 1px solid #383838;
+	box-shadow: 1px 1px 1px #000;	
+}
+
+#accept_button { /*<form> accept button (requests.php)*/
+	width: 20%;
+	height: 35px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #383838;
+	margin: 5px;	
+	border: 1px solid #383838;
+	color: #FFFFF0;
+	text-align: center;
+	background-color: #2ECC71;
+	font-family: 'Bellota-Bold', sans-serif;
+	font-size: 24px;
+	padding: 0 3px 0 0;
+}
+
+#ignore_button { /*<form> ignore button (requests.php)*/
+	width: 20%;
+	height: 35px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #383838;
+	margin: 5px;
+	border: 1px solid #383838;
+	color: #FFFFF0;
+	text-align: center;
+	background-color: #E74C3C;
+	font-family: 'Bellota-Bold', sans-serif;
+	font-size: 24px;
+	padding: 0 3px 0 0;
+}
+
+.delete_button { /*delete button (post.php)*/
+	height: 22px;
+	width: 22px;
+	padding: 0;
+	float: right;
+	border-radius: 4px;
+	right: -15px;
+	position: relative;
+}
+
+.profile_main_column { /*<div four> (profile.php)*/
+	min-width: 675px;
+	float: left;
+	width: 70%;
+	z-index: -1;
+}
+
+/* display number of mutual friends (profile.php) */
+.profile_info_bottom { 
+	margin: 10 0 0 7px;
+}
+
+/* text area for messages */
+#message_textarea { /* id='message_textarea (messages.php) */
+	width: 80%;
+	margin-right: 8px;
+	border-radius: 5px;
+	border: 1px solid #383838;
+	box-shadow: 1px 1px 1px #000;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+/* Send button for messages */
+#message_submit { /* id='message_submit' (messages.php) */
+	height: 41px;
+	width: 120px;
+	margin: 0;
+	position: absolute;
+	border:none;
+	background-color: #F8C471;
+	color: #383838;
+	border-radius: 5px;
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	text-shadow: #000 0.3px 0.3px 0px;
+}
+
+.message { /* <div class='message' id='color'> (Message.php (function getMessages)) */
+	border: 1px solid #383838;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #000;
+	padding: 5px 10px;
+	display: inline-block;
+	color: #000;
+}
+
+/* if user_to == userLoggedIn */
+.message#green { /* <div class='message' id='green'> (Message.php (function getMessages)) */
+	background-color: #2ECC71;
+	border-color: #27AE60;
+	float: left;
+	margin-bottom: 5px;
+}
+
+/* else if user_to != userLoggedIn */
+.message#blue { /* <div class='message' id='blue'> (Message.php (function getMessages)) */
+	background-color: #3498DB;
+	border-color: #2980B9;
+	float: right;
+	margin-bottom: 5px;
+}
+/* main div to load messages, setting values to work amongst all browsers */
+.loaded_messages { /* <div class='loaded_messages'> (messages.php) */
+	height: 65%;
+	min-height: 300px;
+	max-height: 400px;
+	overflow: scroll;
+	margin-bottom: 10px;
+}
+
+/*conversation section under profile section when on messages.php page*/
+.loaded_conversations { /* <div class="loaded_conversations"> (messages.php) */
+	max-height: 216px;	
+	overflow: scroll;
+}
+
+/*$return_string getConversations() func */
+.user_found_messages { /* <div class='user_found_messages'> (Message.php(getConversations()*/
+	border-bottom: 1px solid #383838;
+	padding: 8px 8px 10px 8px;
+}
+
+.user_found_messages:hover {
+	background-color: #EAEBE5;
+}
+
+.user_found_messages img {
+	max-height: 35px;
+	height: 35px;
+	float: left;
+}
+
+/*number of friends in common (faded grey)*/
+#grey { /*id='grey' (ajax_friend_search.php)*/
+	color: #8C8C8C;
+}
+
+/*search friends results*/
+.resultDisplay { /*<div class='resultDisplay'> (ajax_friend_search.php)*/
+	padding: 5px 5px 0 5px;
+	height: 75px;
+	border-bottom: 1px solid #383838;
+}
+
+/*search friends results*/
+.resultDisplay a { /*<div class='resultDisplay'> (ajax_friend_search.php)*/
+	float: none;
+}
+
+/*search friends results*/
+.resultDisplay:hover { /*<div class='resultDisplay'> (ajax_friend_search.php)*/
+	background-color: #EAEBE5;
+	text-decoration: none;
+}
+
+/*search friends results*/
+.liveSearchProfilePic img { /*<div class='liveSearchProfilePic'> (ajax_friend_search.php)*/
+	height: 50px;
+	border-radius: 25px;
+	margin: 1px 12px 0 2px;
+	float: left;
+}
+
+/*search friends results*/
+.liveSearchText { /*<div class='liveSearchText'> (ajax_friend_search.php) */
+	background-color: transparent;
+	color: #1E96CA;
+}
+
+/*search friends results*/
+.liveSearchText p { /*<div class='liveSearchText'> (ajax_friend_search.php) */
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+/*content displayed when pressing one of the tabs(newfeed, about, messages)*/
+.tab-content { /*<div class="tab-content"> (profile.php)*/
+	margin-top: 25px;
+}
+
+/*the tab pane (newsfeed, messages)*/
+.nav { /*<ul class="nav (profile.php)*/
+	padding: 15px;
+	background-color: #F8C471;
+	border: 1px solid #383838;
+	border-radius: 5px;
+	box-shadow: 2px 1px 1px #000;
+	font-family: 'Bellota-Bold', sans-serif;	
+}
+
+/*the tab pane (newsfeed, messages) on profile page*/
+.nav a { /*<ul class="nav (profile.php)*/
+	padding: 0px 20px 0 0;
+	text-decoration-color: #383838;
+}
+
+.nav a:hover {
+	color: #000;
+}
+
+/*messages icon drop-down*/
+.dropdown_data_window { /*<div class="dropdown_data_window" (header.php) */
+	background-color: #FFF;
+    border: 1px solid #DADADA;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    width: 300px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    overflow: scroll;
+}
+
+/*Message Alert on messages icon*/
+.notification_badge { /*<span class="notification_badge (header.php)*/
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #FFF;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #F00;
+	border-radius: 10px;
+	position: absolute;
+	left: 3px;
+	top: 0px;
+}
+
+/* Notifications dropdown (Notification.php (getNotifications())*/
+.resultDisplayNotification { /*<div class='resultDisplay resultDisplayNotification*/
+	height: auto;
+	color: #0326F8;
+	padding-bottom: 7px;
+}
+
+/* Notifications dropdown */
+.resultDisplayNotification img {
+    height: 40px;
+    border-radius: 5px;
+    margin: 1px 12px 0px 2px;
+    float: left;
+}
+
+/* Notifications dropdown */
+.timestamp_smaller { /*<p class='timestamp_smaller (Notification.php (getNotifications()*/
+	font-size: 85%;
+	margin: 0;
+}
+
+/*Search field in nav bar*/
+.search { /*<div class="search"> (header.php)*/
+	margin: 8px 0 0 4%;	
+}
+
+/*Search field in nav bar*/
+.search #search_text_input { /*<div class="search #search_text_input> (header.php)*/
+	border: 1px solid #383838;
+  	float: left;
+  	height: 28px;
+  	outline: 0;
+  	width: 130;
+  	border-top-right-radius: 0;
+  	border-bottom-right-radius: 0;
+  	border-top-left-radius: 3px;
+  	border-bottom-left-radius: 3px;  	
+  	padding-bottom: 4px;
+}
+
+/*Search field in nav bar*/
+.button_holder { /*<div class="button_holder"> (header.php)*/
+	background-color: #F1F1F1;
+  	border: 1px solid #383838;
+  	cursor: pointer;
+  	float: left;
+  	height: 28px;
+  	text-align: center;
+  	width: 30px;
+  	border-top-right-radius: 3px;
+  	border-bottom-right-radius: 3px;
+}
+
+/*Search field in nav bar*/
+.button_holder img { /*<div class="button_holder"> (header.php)*/
+	margin-top: 1px;
+    width: 20px;
+}
+
+/*Search result dropdown box*/
+.search_results { /*<div class="search_results"> (header.php)*/
+	background-color: #FFF;
+    border: 1px solid #DADADA;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 21px;
+}
+
+/*Search result dropdown box*/
+.search_results_footer{ /*<div class="search_results"> (header.php)*/
+	padding: 7px 4px 0px 4px;
+    height: 30px;
+    border: 1px solid #DADADA;
+    border-top: none;
+    background-color: #F8C471;
+    text-align: center;
+}
+
+/*Search result dropdown box*/
+.search_results_footer a { /*<div class="search_results"> (header.php)*/
+	color: #000;
+}
+
+/*After clicking "see all results" in search field footer*/
+.search_result { /*<div class='search_result'> (search.php)*/
+	padding: 10px;
+    height: 100px;
+}
+
+/*Button location "Remove Friend" in search results*/
+.searchPageFriendButtons { /*<div class='searchPageFriendButtons'> (search.php)*/
+	float: right;
+}
+
+/*<div class='searchPageFriendButtons'> (search.php)*/
+.searchPageFriendButtons input[type="submit"] { 
+	border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+/*search results profile pic location*/
+.result_profile_pic { /*<div class='result_profile_pic'> (search.php)*/
+	float: left;
+    margin-right: 10px;
+}
+
+/*two horizontal rows in search.php, to make spacing nicer*/
+#search_hr { /*<hr id='search_hr'> (search.php)*/
+	margin-bottom: 0px;
+}
+
+/*text Account Settings top of page*/
+#account_settings { /*<h4 id="account_settings" (settings.php)*/
+	font-family: 'Bellota-Bold', sans-serif;
+}
+
+/*profile pic settings page*/
+.small_profile_pic { /*class='small_profile_pic' (settings.php)*/
+	height: 130px;
+    margin: 1px 12px 0px 2px;   
+    float: left;
+}
+
+/*text "Upload new profile picture", settings page*/
+#upload { /*id="upload" (settings.php)*/
+	font-family: 'Bellota-Bold', sans-serif;
+}
+
+/*text "Update Name and Email" settings page*/
+#update { /*id="update" (settings.php)*/
+	font-size: 24px;	
+	font-family: 'Bellota-Bold', sans-serif;
+	margin-top: 0px;		
+}
+
+/*text "Change Password" settings page*/
+#change_pass { /*id="change_pass" (settings.php)*/
+	font-size: 24px;
+	font-family: 'Bellota-Bold', sans-serif;
+}
+
+/*referring to all text before text input fields on settings page*/
+#first { /*id="first" (settings.php)*/
+	color: #000;
+	font-family: 'Bellota-Bold', sans-serif;
+}
+
+/*referring to all input fields on settings page*/
+#settings_input { /*id="settings_input" (settings.php)*/
+	border: 1px solid #383838;	
+    height: 30px;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*Update Details and Update Password button on settings page*/
+#update_details { /*id="update_details" (settings.php)*/
+	background-color: #F8C471;
+	font-family: 'Bellota-Bold', sans-serif;
+	color: #000;
+}
+
+/*Close Account button on settings page*/
+.settings_submit {
+	border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-family: 'Bellota-Bold', sans-serif;
+    color: #FFF;
+}
+
+#close {
+	color: #000;
+	font-family: 'Bellota-Bold', sans-serif;
+}
+
+.message .deleteButton {
+   color: #000;
+   margin: 0 5px 5px 0;
+   cursor: pointer;
+}
+
+.postedImage img {
+	max-height: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 5px auto;
+}
+
+img.profilePicSmall {
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+	margin: 5px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+/****************** IMPORTED FONTS **************************/
+@font-face {
+	font-family: 'Bellota-Bold';
+	src: url('../fonts/Bellota-Bold.otf');
+}
+@font-face {
+	font-family: 'Bellota-BoldItalic';
+	src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+@font-face {
+	font-family: 'Bellota-Italic';
+	src: url('../fonts/Bellota-Italic.otf');
+}
+@font-face {
+	font-family: 'Bellota-Light';
+	src: url('../fonts/Bellota-Light.otf');
+}
+@font-face {
+	font-family: 'Bellota-LightItalic';
+	src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face {
+	font-family: 'Bellota-Regular';
+	src: url('../fonts/Bellota-Regular.otf');
+}
+@font-face {
+	font-family: 'Lobster';
+	src: url('../fonts/Lobster.otf');
+}
+
+/*********** END IMPORTED FONTS ***********************************/
+
+html, body { /* all html and body of (register.php) */
+	height: 100%;
+	min-height: 100%;
+}
+
+form { /* register and login form (register.php) */
+	text-align: center;
+}
+
+body {
+
+	/* remove white space from around background image */
+	margin: 0;
+	padding: 0;
+}
+
+a { /* two links (register.php) */
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	text-shadow: #000 0.2px 0.2px 0.2px;	
+	color: #003EFF;
+}
+
+.wrapper { /* <div one> class wrapper (register.php) */
+
+	/***** BACKGROUND IMAGE *****/
+	background-image: url("../images/backgrounds/cafe.jpg");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	min-width: 1200px;
+}
+
+.login_box { /* <div two> class login_box (register.php) */
+
+	/***** postition, margin, background-color of forms box *****/
+	font-family: 'Bellota-LightItalic', sans-serif;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	top: 7%;
+	width: 35%;
+	background-color: #FFFFF0;
+	border: 1px solid #383838;
+	box-shadow: 1px 1px 1px #000;
+	border-radius: 10px;
+	padding: 8px;
+	opacity: 0.90;
+}
+
+.login_header { /* <div three> class login_header (register.php) */
+
+	/***** header above the forms *****/
+	font-family: 'Bellota-LightItalic', sans-serif;
+	width: 100%;
+	height: 90px;
+	background-color: #F8C471;
+	color: #383838;
+	text-shadow: #000 0.5px 0.5px 0.5px;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.login_header h1 { /* <div three> class login_header h1 (register.php) */
+
+	/***** h1 = Chatroom Caffe *****/
+	font-family: 'Lobster', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #383838;
+	text-shadow: #fffff0 4px 4px 4px;
+	font-size: 300%;
+}
+
+input[type="submit"] { /* Register / Login Button */
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	font-size: 100%;
+	color: #383838;
+	text-shadow: #000 0.5px 0.5px 0.5px;
+	background-color: #F8C471;
+	padding: 5px 10px 5px 10px; /*top, right, bottom, left*/
+	margin: 5px 0 10px 0;
+	border: 1px solid #383838;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000;
+	width: 25%;
+}
+
+/* input fields (register.php) */
+input[type="text"], input[type="email"], input[type="password"] {
+	border: 1px solid #383838;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #000;
+	width: 50%;
+	height: 35px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+#second { /*hide registration form until user clicks the link. jquery (register.js)*/
+	display: none;
+}
+
+
+
